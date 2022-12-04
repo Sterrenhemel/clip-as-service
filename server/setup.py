@@ -7,7 +7,7 @@ if sys.version_info < (3, 7, 0):
     raise OSError(f'CLIP-as-service requires Python >=3.7, but yours is {sys.version}')
 
 try:
-    pkg_name = 'clip-server'
+    pkg_name = 'v-clip-server'
     libinfo_py = path.join(
         path.dirname(__file__), pkg_name.replace('-', '_'), '__init__.py'
     )

@@ -108,7 +108,7 @@ class CLIPEncoder(Executor):
         set_rank(docs)
 
     @requests
-    async def encode(
+    def encode(
         self,
         docs: 'DocumentArray',
         tracing_context=None,

@@ -132,9 +132,11 @@ class CLIPEncoder(Executor):
         await self.encode(docs['@r,m'], drop_image_content=_drop_image_content)
 
         set_rank(docs)
+    
+
 
     @requests
-    async def encode(
+    def encode(
         self,
         docs: 'DocumentArray',
         tracing_context=None,
